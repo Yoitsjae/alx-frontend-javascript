@@ -7,3 +7,19 @@ export default function getFullResponseFromAPI(success) {
     }
   });
 }
+
+// Test the function with different values of `success`
+const promise1 = getFullResponseFromAPI(true);
+promise1.then(response => {
+  console.log('Resolved:', response);
+}).catch(error => {
+  console.error('Rejected:', error);
+});
+
+const promise2 = getFullResponseFromAPI(false);
+promise2.then(response => {
+  console.log('Resolved:', response);
+}).catch(error => {
+  console.error('Rejected:', error);
+});
+
