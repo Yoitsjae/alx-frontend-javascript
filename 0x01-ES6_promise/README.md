@@ -1,52 +1,55 @@
-0x01. ES6 Promises
-Description
-This project explores ES6 Promises in JavaScript, covering topics such as:
+# ES6 Promises
 
-What are Promises and why are they used?
-How to use the then, resolve, and catch methods
-Utilizing the every method of the Promise object
-Error handling with throw and try
-Understanding the await operator
-Implementing and using async functions
-Project Structure
-The project consists of the following files:
+## Overview
+This repository contains JavaScript files implementing various tasks related to ES6 Promises. Each task focuses on different aspects of promises, such as creation, resolution, rejection handling, chaining, and error handling.
 
-0-setup.js: Contains setup instructions to install Node.js 12.11.x, Jest, Babel, and ESLint.
-1-then.js: Explains how to use the then method of Promises.
-2-catch.js: Covers error handling with the catch method.
-3-all.js: Demonstrates the usage of the every method of the Promise object.
-4-throw_error.js: Illustrates error handling using throw and try.
-5-await.js: Introduces the await operator.
-6-async.js: Demonstrates how to use an async function.
-7-load.js: Contains utility functions for loading data asynchronously.
-tests/: Directory containing test files for each JavaScript file.
-package.json: File specifying project dependencies and scripts.
-babel.config.js: Babel configuration file.
-.eslintrc.js: ESLint configuration file.
-Setup Instructions
-Install Node.js 12.11.x:
+## Tasks
+1. **Keep every promise you make and only make promises you can keep**
+   - File: 0-promise.js
+   - Return a Promise using a specific prototype function.
 
-bash
-Copy code
-curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
-sudo bash nodesource_setup.sh
-sudo apt install nodejs -y
-Verify Node.js and npm installation:
+2. **Don't make a promise...if you know you can't keep it**
+   - File: 1-promise.js
+   - Return a promise based on a boolean argument.
 
-bash
-Copy code
-node -v
-npm -v
-Install project dependencies:
+3. **Catch me if you can!**
+   - File: 2-then.js
+   - Append handlers to a Promise and handle resolution and rejection.
 
-bash
-Copy code
-npm install
-Testing
-To run the tests for this project, use the following command:
+4. **Handle multiple successful promises**
+   - File: 3-all.js
+   - Resolve multiple promises and handle errors collectively.
 
-bash
-Copy code
-npm test
+5. **Simple promise**
+   - File: 4-user-promise.js
+   - Return a resolved promise with specific data.
+
+6. **Reject the promises**
+   - File: 5-photo-reject.js
+   - Return a rejected promise with specific error message.
+
+7. **Handle multiple promises**
+   - File: 6-final-user.js
+   - Handle multiple promises and return an array of results.
+
+8. **Load balancer**
+   - File: 7-load_balancer.js
+   - Return the result of the fastest resolving promise.
+
+9. **Throw error / try catch**
+   - File: 8-try.js
+   - Implement a function to divide numbers safely.
+
+10. **Throw an error**
+    - File: 9-try.js
+    - Implement a function to guardrail a given math function.
+
+11. **Await / Async**
+    - File: 100-await.js
+    - Implement an async function to handle multiple async operations and return results.
+
+## Usage
+To test each task, run the corresponding JavaScript file using Node.js. For example:
+
 Author
 [Jae Ncube]
